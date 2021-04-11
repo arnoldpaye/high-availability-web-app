@@ -147,3 +147,13 @@ Resources:
       VpcId:
         Fn::ImportValue:
           Fn::Sub: "${EnvironmentName}-VPCID"
+
+Outputs:
+  URL:
+    Description: Datagram URL
+    Value:
+      !Sub
+        - 'http://${DNSName}'
+        - {DNSName: !GetAtt 'WebAppLB.DNSName'}
+    Export:
+      Name: !Sub "${EnvironmentName}-URL"
