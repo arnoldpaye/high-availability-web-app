@@ -1,4 +1,8 @@
 Description: >
+  High-availability web project: Infrastructure
+  - 2 public subnets
+  - 2 private subnets
+  VPC has internet connection through an internet gateway
 
 Parameters:
   EnvironmentName:
