@@ -14,5 +14,15 @@ You'll need to create a **Launch Configuration** for your application servers in
 You'll need two vCPUs and at least 4GB of RAM. The Operating System to be used is Ubuntu 18. So, choose an Instance size and Machine Image (AMI) that best fits this spec.
 Be sure to allocate at least 10GB of disk space so that you don't run into issues.
 
+## Run templates
+```bash
+$ ./create-infrastructure.sh
+```
+
+```bash
+$ ./create-servers.sh
+```
+
+## Diagram
 ![Diagram](./udagram-diagram.png)
 

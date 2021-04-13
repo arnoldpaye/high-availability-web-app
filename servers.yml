@@ -2,7 +2,7 @@ Description: >
   High-availability web project: Instances and services
   - 2 security groups, one for load balancer and one for web serve instances
   - 1 auto scaling group with at least 4 web server instances
-  - Every instance is a ubuntu 18.04 LTS image with 10G of storage
+  - Every instance is a ubuntu 18.04 LTS image with 10GB of storage
   - Web site's code is copied from a public bucket: arn-demo-1 using a IAM role
 
 Parameters:
